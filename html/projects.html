@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widh, initial-scale=1.0">
+    <title>Poumium</title>
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-- Navbar for the page -->
+    <div class="conatiner">
+        <header>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">Poumium</h1>
+
+            <!-- nave with anchor tags -->
+            <nav>
+                <a data-aos="fade-down" data-aos-duration="1500" href="/index.html">HOME</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="html/projects.html">PROJECTS</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="#">FEATURES</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="#">ABOUT</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="#">CONTACT</a>
+            </nav>
+        </header>
+
+        <!-- Content information -->
+        <main>
+            <section class="projects-intro" data-aos="fade-up">
+                <h2>My Projects</h2>
+                <p>A collection of my work on GitHub</p>
+            </section>
+            
+            <div class="projects-grid">
+                <!-- Example project card with image -->
+                <article class="project-card" data-aos="fade-up">
+                    <div class="project-image-container">
+                        <img src="/img/GenshinImage_1.png" alt="Project screenshot" class="project-image">
+                        <div class="project-links">
+                            <a href="#" class="github-link" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="live-demo" title="Live Demo">🌐</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name</h3>
+                        <p class="project-description">A brief description of what this project does and its key features.</p>
+                        <div class="project-footer">
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">React</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="stars">⭐ 42</span>
+                                <span class="updated">Updated 2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Add more project cards as needed -->
+            </div>
+        </main>
+    </div>
+    <!--  lOADOUT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/js/githubDynamic.js"></script>
+</body>
